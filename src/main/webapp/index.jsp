@@ -43,8 +43,8 @@
             bottom: 0;
         }
         .logo {
-            height: 150px;
-            width: 150px;
+            height: 170px;
+            width: 200px;
             vertical-align: middle;
         }
     </style>
