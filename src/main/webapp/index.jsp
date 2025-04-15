@@ -51,7 +51,7 @@
 <body>
 
 <header>
-    <img src="https://raw.githubusercontent.com/Donhadley22/peabsmart-assets/main/logo.png" alt="Peabsmart Logo" class="logo">
+    <img src="images/peabsmart-logo.png" alt="Peabsmart Logo" class="logo">
     <h1>Welcome to Peabsmart</h1>
     <p>Cloud & DevOps | Software | Cybersecurity | IT Support</p>
 </header>
