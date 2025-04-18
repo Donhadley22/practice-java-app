@@ -5,11 +5,11 @@ FROM jetty:9.4-jdk8
 WORKDIR /var/lib/jetty/webapps
 
 # Copy the WAR file into the webapps directory and rename it to ROOT.war
-COPY target/my-webapp-1.0-SNAPSHOT.war ROOT.war
+COPY /var/lib/jenkins/workspace/java-app-pipeline_main/target/my-webapp.war ROOT.war
 
 # Ensure the WAR file has appropriate permissions
 RUN chmod a+r ROOT.war
 
 # Expose Jetty's default port
-EXPOSE 8080
+EXPOSE 9090
 
