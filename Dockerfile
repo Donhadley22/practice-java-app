@@ -7,9 +7,6 @@ WORKDIR /var/lib/jetty/webapps
 # Copy the WAR file into the webapps directory and rename it to ROOT.war
 COPY target/my-webapp.war ROOT.war
 
-# Ensure the WAR file has appropriate permissions
-RUN chmod a+r ROOT.war
-
 # Expose Jetty's default port
 EXPOSE 9090
 
