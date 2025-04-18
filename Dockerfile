@@ -10,3 +10,5 @@ COPY target/my-webapp.war ROOT.war
 # Expose Jetty's default port
 EXPOSE 8080
 
+# Start Jetty server
+CMD ["java", "-jar", "/usr/local/jetty/start.jar"]
