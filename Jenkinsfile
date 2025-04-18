@@ -14,7 +14,7 @@ pipeline {
     EC2_REGION            = 'us-east-1'
     SSH_CREDENTIALS_ID    = 'ec2-ssh-key'
     EC2_USER              = 'ubuntu'
-    EC2_HOST              = '3.89.70.94'
+    EC2_HOST              = '52.87.109.141'
     CONTAINER_NAME        = 'peabsmart-app'
     HOST_PORT             = 80
     CONTAINER_PORT        = 9090

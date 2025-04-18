@@ -8,5 +8,5 @@ WORKDIR /var/lib/jetty/webapps
 COPY target/my-webapp.war ROOT.war
 
 # Expose Jetty's default port
-EXPOSE 9090
+EXPOSE 8080
 
