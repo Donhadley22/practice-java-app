@@ -26,18 +26,25 @@ pipeline {
       }
     }
 
+    stage('Package') {
+      steps {
+        echo 'Building the Java project and packaging WAR...'
+          sh 'mvn clean package'
+  }
+}
+
+stage('Test') {
+      steps {
+        echo 'Running tests...'
+         sh 'mvn test'
+      }
+    }
     stage('Build') {
       steps {
         echo 'Building Docker image...'
         script {
           docker.build("${DOCKER_IMAGE}:${DOCKER_TAG}", "-f ${DOCKERFILE} .")
         }
-      }
-    }
-
-    stage('Test') {
-      steps {
-        echo 'Running tests...'
       }
     }
 
