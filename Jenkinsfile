@@ -17,7 +17,7 @@ pipeline {
     EC2_HOST              = '52.87.109.141'
     CONTAINER_NAME        = 'peabsmart-app'
     HOST_PORT             = 80
-    CONTAINER_PORT        = 9090
+    CONTAINER_PORT        = 8080
   }
 
   stages {
